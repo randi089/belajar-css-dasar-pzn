@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box</title>
+    <title>Overflow</title>
     <style>
       body {
         padding: 0;
         margin: 0;
+        min-height: 2000px;
       }
 
       div {
@@ -30,8 +31,22 @@
         margin: 10px 10px 10px 10px;
         border-style: solid;
         border-width: 2px;
-        border-radius: 20px 0 20px 0;
-        opacity: 0.5;
+        border-radius: 20px 0 0 20px;
+        overflow: auto;
+      }
+
+      .artikel1::-webkit-scrollbar {
+        width: 0.6rem;
+        background-color: aliceblue;
+      }
+
+      .artikel1::-webkit-scrollbar-thumb {
+        background-color: aquamarine;
+        cursor: pointer;
+      }
+
+      .artikel1::-webkit-scrollbar-thumb:hover {
+        background-color: chartreuse;
       }
 
       .artikel2 {
@@ -52,7 +67,9 @@
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi nostrum porro incidunt atque expedita
         repellat harum sapiente quas iusto, illum voluptate distinctio esse natus blanditiis alias ab itaque! Libero,
-        optio.
+        optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta, beatae cum nam facilis esse
+        nesciunt magnam unde aliquid voluptatibus natus at aliquam cupiditate nulla distinctio reprehenderit? Nemo, nam
+        ea?
       </p>
     </div>
     <div class="artikel2">
